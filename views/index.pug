@@ -1,0 +1,19 @@
+html
+    head 
+        title Stripe Demo
+
+    body
+        form(action="/charge" method="post")
+            script(
+            src="https://checkout.stripe.com/checkout.js"
+            class="stripe-button"
+            data-key="upublishable key" 
+            data-amount=obj.amount
+            data-currency=obj.currency 
+            data-name="Crafty Gourav" 
+            data-description="Handmade Art and Craft Products" 
+            data-locale="auto").
+            input(type="hidden", name="chargeAmount" , value=obj.amount)
+            input(type="hidden", name="currency" , value=obj.currency)
+             
+    

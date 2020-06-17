@@ -1,0 +1,14 @@
+html
+    head    
+        title This is a payment Page.
+
+    body
+        form(action="/payment" method="post")
+            label Enter Amount  
+            input(type="text", name="amount")
+
+            br
+            label Enter currency
+            input(type="text", name="currency")
+
+            input(type="submit" name="smt" value="pay now")
